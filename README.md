@@ -86,6 +86,21 @@ Where:
 - `INPUT_COST` and `OUTPUT_COST` are set in your `.env` file
 
 
+
+## API Documentation (Swagger)
+
+This project uses [Swagger](https://swagger.io/) for interactive API documentation.
+
+Once the server is running, access the Swagger UI at:
+
+```
+http://localhost:3000/docs
+```
+
+You can explore all endpoints, view request/response schemas, and try out the API directly from your browser.
+
+---
+
 ## API Usage
 
 ### Example Request
