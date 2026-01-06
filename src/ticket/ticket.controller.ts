@@ -1,5 +1,6 @@
 import { Controller, Post, Body } from '@nestjs/common';
 import { UsePipes, ValidationPipe } from '@nestjs/common';
+import { ApiResponse } from '@nestjs/swagger';
 
 import { TriageTicketDto } from './dto/triage-ticket.dto';
 import { TriageResponseDto } from './dto/triage-response.dto';
@@ -11,6 +12,11 @@ export class TicketController {
 
   @Post('triage-ticket')
   @UsePipes(new ValidationPipe())
+  @ApiResponse({
+    status: 201,
+    description: 'The triaged ticket response',
+    type: TriageResponseDto,
+  })
   async triageTicket(
     @Body() triageTicketDto: TriageTicketDto,
   ): Promise<TriageResponseDto> {
