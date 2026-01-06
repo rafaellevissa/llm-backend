@@ -157,5 +157,4 @@ These flags are designed to help automate triage and escalation decisions.
 ## Improvements (Future Work)
 
 - **Observability & Grafana**: Integrate metrics collection (e.g., Prometheus) and Grafana dashboards to visualize LLM usage and cost over time.
-- **Tests**: Add/expand unit and integration tests for ticket triage, cost calculation, and config loading.
 - **Config Management UI**: Create a web page (admin route) to view and update config values (e.g., token costs, agent instructions) at runtime.
